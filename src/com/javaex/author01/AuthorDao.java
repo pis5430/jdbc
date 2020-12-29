@@ -32,14 +32,12 @@ public class AuthorDao {
 			PreparedStatement pstmt = null;
 			
 			int count = 0;
-			//ResultSet rs =null;
 			
 			try {	
 				//1. JDBC 드라이버 (oracle)로딩
 				Class.forName(driver);
 				
 				//2. connection얻어오기
-				String url = "jdbc:oracle:thin:@localhost:1521:xe";
 				conn = DriverManager.getConnection(url, id, pw);
 					
 				
