@@ -1,4 +1,4 @@
-package com.javaex.author01;
+package com.javaex.author02;
 
 import java.util.List;
 
@@ -28,11 +28,16 @@ public class AuthorApp {
 		
 		//리스트 전체출력
 		System.out.println("=====리스트 전체출력======");
+		
 		for(int i=0; i<authorList.size(); i++) {
 			AuthorVo vo = authorList.get(i);
-			System.out.println(vo.getAuthorId() + "," + vo.getAuthorName() + "," + vo.getAuthorDesc());
+			System.out.println(vo.getAuthorId() + "," + vo.getAuthorName() + "," + 
+								vo.getAuthorDesc());
 		}
+	
+	
 		
+		/*
 		//작가삭제
 		authorDao.authorDelete(2);
 		
@@ -69,7 +74,7 @@ public class AuthorApp {
 		//System.out.println(authorList.toString());
 		
 		
-		/*
+		
 		
 		List<AuthorVo> authorList = authorDao.getAuthorList();
 		//for() 이용해서 출력
@@ -79,6 +84,7 @@ public class AuthorApp {
 		authorDao.authorDelete(2,"김경리","제주도");
 		
 		*/
+		
 		
 	}
 
