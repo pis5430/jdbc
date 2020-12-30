@@ -182,10 +182,12 @@ public class BookDao {
 					conn = DriverManager.getConnection(url, id, pw);
 					
 					//(1)
-					//오류 추정구간 (출력되는 date값을 'YYYY-MM-DD'값으로 맞춰주기 위해 to_char()을 사용할경우)
+					//오류 추정구간 (출력되는 date값을 'YYYY-MM-DD'값으로 맞춰주기 위해 to_char()을 사용할경우) 
+					//--> to_date()로 변경해도 똑같음
 					//error:java.sql.SQLSyntaxErrorException: ORA-00927: missing equal sign
 					
-					//(2)
+					//(2) --> 출력하는 부분이 아니기 때문에 to_date(),to_char()값을 안써도 될것같은데
+					//오류가 나는 이유를 모르겠음...(테이블 만들시 date 값으로 만들었는데 입력할때는 String 으로 입력하는데서 오는 오류?)
 					//오류 추정구간 (to_char()을 사용하지 않을경우)
 					//error:java.sql.SQLDataException: ORA-01861: literal does not match format string
 					
