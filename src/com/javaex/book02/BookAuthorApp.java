@@ -128,7 +128,7 @@ public class BookAuthorApp {
 		
 		//수정
 		
-		BookVo bookVo00 = new BookVo(5 ,"패션왕(수정)","중앙북스(수정)","0000-00-00" , 4);
+		BookVo bookVo00 = new BookVo(5 ,"패션왕(수정)","중앙북스(수정)","1991-08-02" , 4);
 		bookDao.bookUpdate(bookVo00);
 		
 		

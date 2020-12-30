@@ -191,6 +191,8 @@ public class BookDao {
 					//오류 추정구간 (to_char()을 사용하지 않을경우)
 					//error:java.sql.SQLDataException: ORA-01861: literal does not match format string
 					
+					//--> 해결  :  app에서 수정할때 "0000-00-00"값은 오류남
+					
 					String query ="";
 					query += " update book ";
 					query += " set title = ? ,";
