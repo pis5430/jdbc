@@ -83,7 +83,7 @@ public class BookDao {
 		
 		
 		
-		return 1;
+		return count;
 	}
 	
 	//책 리스트 가져오기
